@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>NEWSHUB | One search. Every Prospective</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+ <header>
+    <nav class="navbar">
+
+        <a href="#home" class="logo">
+            <span>●</span> NEWHUB
+        </a>
+
+        <div class="nav-links">
+             <a href="#home">Home</a>
+             <a href="trending">Trending</a>
+             <a href="#categories">Categories</a>
+             <a href="#about">About</a>
+
+        </div>
+
+        <a href="categories" class="nav-button">
+            Explore News
+
+        </a>
+
+    </nav>
+ </header>
+
+
+ <!-- HERO -->
+
+<section id="home" class="hero">
+
+
+    <div class="hero-content">
+
+        <div class="hero-texts">
+
+            <p class="eyebrow">THE WORLD. ONE PLACE.</p>
+
+            <h1>
+                What's the
+                <span>Tea?</span>
+            </h1>
+
+             <p class="hero-description">
+                 The world never really slows down, and neither does the internet.
+                 NEWSHUB brings together the stories, trends, conversations, and moments
+                 shaping the world right now — from breaking headlines and technology to
+                 sports, entertainment, culture, and everything in between. No endless
+                 scrolling, no getting lost in a sea of tabs — just one place to discover
+                 what’s happening, explore different sources, and follow the stories
+                 everyone is talking about.
+</p>
+
+      
+                <div class="search-box">
+
+                    <input 
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search a topic, person or story.........">
+
+                    <button onclick="searchNews()">
+                            Search →
+                    </button>
+                </div>
+
+                <p class="search-hint">
+                    Try: AI • India • Cricket • Movies • Business • Politics • Technology • Health • Entertainment • Sports • Science • Education • Travel • Food
+                </p>
+        </div>
+
+        <!-- HERO CARD -->
+        <div class="hero-card">
+
+            <div class="live">
+                <span></span> LIVE DISCOVERY
+
+            </div>
+
+            <div class="world-icon">◎</div>
+
+            <h3>Stay Curious.</h3>
+
+            <p> One search can lead you to multiple perspectives,
+                    sources and stories.
+                </p>
+
+                <div class="stats">
+
+                    <div>
+                        <strong>24*7</strong>
+                        <small>Updates</small>
+                    
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <small>Stories</small>
+                    </div>
+
+                    <div>
+                        <strong>1</strong>
+                        <small>Search</small>
+
+                    </div>
+                </div>
+    </div>
+
+</section>
+
+<!-- Trending -->
+ <section id="trending" class="section">
+
+    <div class="section-title">
+
+        <p class="eyebrows">WHAT'S HOT</p>
+
+        <h2>Trending Right Now</h2>
+
+        <p>
+            Jump into a topic and discover what people are
+                talking about.
+        </p>
+
+    </div>
+     
+
+    <div class="topics">
+
+        <button onclick="searchTopic('Technology')">
+                Techonology↗
+        </button>
+        <button onclick="searchTopic('Entertainment')">
+                Entertainment ↗
+            </button>
+
+            <button onclick="searchTopic('Sports')">
+                Sports ↗
+            </button>
+
+            <button onclick="searchTopic('India')">
+                India ↗
+            </button>
+
+            <button onclick="searchTopic('Business')">
+                Business ↗
+            </button>
+
+            <button onclick="searchTopic('AI')">
+                Artificial Intelligence ↗
+            </button>
+             
+            <button onclick="searchTopic('food')">
+               Food ↗
+            </button>
+            
+            <button onclick="searchTopic('Travel')">
+                Travel  ↗
+            </button>
+           
+            <button onclick="searchTopic('Education')">
+               Education ↗
+            </button>
+
+              <button onclick="searchTopic('Science')">
+               Science ↗
+            </button>
+
+              <button onclick="searchTopic('Cricket')">
+               Cricket ↗
+            </button>
+
+              <button onclick="searchTopic('Movies')">
+               Movies ↗
+            </button>
+
+              <button onclick="searchTopic('Politics')">
+               Politics ↗
+            </button>
+
+             <button onclick="searchTopic('Health')">
+               Health ↗
+            </button>
+    </div>
+
+
+</section>
+
+    <!-- NEWS -->
+     <section id="categories" class="section news-section">
+
+        <div class="section-title">
+
+            <p class="eyebrow">DISCOVER</p>
+
+            <h2>Stories worth knowing</h2>
+            <p>
+                Explore different topics and follow the story
+                back to its original source.
+            </p>
+        </div>
+
+        <div id="newsContainer" class="news-grid">
+
+
+            <!-- NEWS CARD 1 -->
+             <article class="news-card featured">
+
+                <div class="news-card featured">
+
+                    <div class="card-top">
+                        <span>01</span>
+                        <span>TECHNOLOGY</span>
+                    </div>
+
+                    <div class="card-icon">✦</div>
+
+                    <h3>
+                        The technology changing how we live and work
+                    </h3>
+
+                    <p>
+                        Explore important technology stories, emerging
+                    ideas and developments from trusted sources.
+
+                    </p>
+
+                   <a href="https://techcrunch.com/" target="_blank">
+                         Explore Technology →
+                    </a>
+
+                 </div>
+             </article>
+
+             <!-- NEWS CARD 2-->
+              <article class="news-card">
+
+                <div class="card-top">
+                    <span>02</span>
+                    <span>ENTERTAINMENT</span>
+
+                
+                </div>
+
+                <div class="card-icon">◆</div>
+
+                <h3>
+                     What's happening in entertainment?
+                </h3>
+
+                <p>
+                    Discover movies, celebrities, interviews and
+                    stories currently getting attention.
+                </p>
+
+                <a href="https://variety.com/" target="_blank">
+                 Explore Entertainment →
+                </a>
+
+                 <!-- NEWS CARD 3 -->
+            <article class="news-card">
+
+                <div class="card-top">
+                    <span>03</span>
+                    <span>SPORTS</span>
+                </div>
+
+                <div class="card-icon">◈</div>
+
+                <h3>
+                    The sports stories everyone is following
+                </h3>
+
+                <p>
+                    Find major matches, updates, players and
+                    conversations from the world of sports.
+                </p>
+
+                <a href="https://www.espn.com/" target="_blank">
+                     Explore Sports →
+                </a>
+
+            </article>
+
+
+            <!-- NEWS CARD 4 -->
+            <article class="news-card">
+
+                <div class="card-top">
+                    <span>04</span>
+                    <span>BUSINESS</span>
+                </div>
+
+                <div class="card-icon">↗</div>
+
+                <h3>
+                    Business stories shaping the market
+                </h3>
+
+                <p>
+                    Discover companies, markets, startups and
+                    important business developments.
+                </p>
+
+                <<a href="https://www.reuters.com/business/" target="_blank">
+                     Explore Business →
+                </a>
+
+            </article>
+
+
+            <!-- NEWS CARD 5 -->
+            <article class="news-card">
+
+                <div class="card-top">
+                    <span>05</span>
+                    <span>INDIA</span>
+                </div>
+
+                <div class="card-icon">●</div>
+
+                <h3>
+                    Important stories from India
+                </h3>
+
+                <p>
+                    Explore major developments, conversations and
+                    stories happening across the country.
+                </p>
+
+                <a href="https://www.thehindu.com/" target="_blank">
+                        Explore India →
+                </a>
+
+            </article>
+
+
+            <!-- NEWS CARD 6 -->
+            <article class="news-card">
+
+                <div class="card-top">
+                    <span>06</span>
+                    <span>AI</span>
+                </div>
+
+                <div class="card-icon">⌁</div>
+
+                <h3>
+                    The latest world of Artificial Intelligence
+                </h3>
+
+                <p>
+                    Explore AI tools, companies, research and
+                    developments changing technology.
+                </p>
+
+                <a href="https://hai.stanford.edu/ai-index" target="_blank">
+                     Explore AI →
+                    </a>
+
+                <!-- NEWS CARD 7 - POLITICS -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>07</span>
+        <span>POLITICS</span>
+    </div>
+
+    <div class="card-icon">◉</div>
+
+    <h3>Politics and developments shaping the nation</h3>
+
+    <p>
+        Follow major political developments, elections,
+        government decisions and important national stories.
+    </p>
+
+    <a href="https://www.reuters.com/world/" target="_blank">
+                Explore Politics →
+    </a>
+
+</article>
+
+
+<!-- NEWS CARD 8 - HEALTH -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>08</span>
+        <span>HEALTH</span>
+    </div>
+
+    <div class="card-icon">♡</div>
+
+    <h3>Health stories that matter</h3>
+
+    <p>
+        Discover medical developments, healthcare updates,
+        wellness trends and important health information.
+    </p>
+
+    <a href="https://www.who.int/" target="_blank">
+          Explore Health →
+    </a>
+
+</article>
+
+
+<!-- NEWS CARD 9 - SCIENCE -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>09</span>
+        <span>SCIENCE</span>
+    </div>
+
+    <div class="card-icon">✦</div>
+
+    <h3>Discover what science is revealing</h3>
+
+    <p>
+        Explore scientific discoveries, space missions,
+        research and fascinating breakthroughs.
+    </p>
+
+    <a href="https://science.nasa.gov/Science-news/" target="_blank">
+              Explore Science →
+    </a>
+
+</article>
+
+
+<!-- NEWS CARD 10 - EDUCATION -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>10</span>
+        <span>EDUCATION</span>
+    </div>
+
+    <div class="card-icon">▣</div>
+
+    <h3>Education and learning updates</h3>
+
+    <p>
+        Find education news, exams, universities, learning
+        opportunities and important academic developments.
+    </p>
+
+    <a href="https://www.unesco.org/" target="_blank">
+        Explore Education →
+    </a>
+
+</article>
+
+
+<!-- NEWS CARD 11 - TRAVEL -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>11</span>
+        <span>TRAVEL</span>
+    </div>
+
+    <div class="card-icon">✈</div>
+
+    <h3>Places, journeys and travel stories</h3>
+
+    <p>
+        Discover destinations, tourism trends, travel
+        experiences and stories from around the world.
+    </p>
+
+    <a href="https://www.lonelyplanet.com/" target="_blank">
+            Explore Travel →
+    </a>
+
+</article>
+
+
+<!-- NEWS CARD 12 - FOOD -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>12</span>
+        <span>FOOD</span>
+    </div>
+
+    <div class="card-icon">◆</div>
+
+    <h3>Food, culture and what's trending</h3>
+
+    <p>
+        Explore food trends, recipes, restaurants, culinary
+        culture and stories people are talking about.
+    </p>
+
+    <a href="https://www.bonappetit.com/" target="_blank">
+            Explore Food →
+    </a>
+
+</article>
+
+
+<!-- NEWS CARD 13 - CRICKET -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>13</span>
+        <span>CRICKET</span>
+    </div>
+
+    <div class="card-icon">●</div>
+
+    <h3>The latest stories from cricket</h3>
+
+    <p>
+        Follow matches, players, tournaments, records and
+        major developments from the world of cricket.
+    </p>
+
+    <a href="https://www.icc-cricket.com/news" target="_blank">
+            Explore Cricket →
+        </a>
+
+</article>
+
+
+<!-- NEWS CARD 14 - MOVIES -->
+<article class="news-card">
+
+    <div class="card-top">
+        <span>14</span>
+        <span>MOVIES</span>
+    </div>
+
+    <div class="card-icon">▶</div>
+
+    <h3>Movies everyone is talking about</h3>
+
+    <p>
+        Discover new releases, trailers, actors, reviews,
+        interviews and the latest movie conversations.
+    </p>
+
+   <a href="https://variety.com/v/film/" target="_blank">
+          Explore Movies →
+    </a>
+
+</article>
+
+
+                
+        </div>
+     </section>
+
+     <!-- HOW IT WORKS -->
+      <section class="how-section">
+
+        <div class="section-title center">
+
+            <p class="eyebrow">HOW IT WORKS</p>
+
+            <h2>Search. Discover. Explore.</h2>
+
+        </div>
+
+        <div class="steps">
+
+            <div class="step">
+                <span>01</span>
+                <h3>Search</h3>
+                <p>
+                    Enter the topic, person or story you want
+                    to know about.
+                </p>
+            </div>
+
+            <div class="step">
+                <span>02</span>
+                <h3>Discover</h3>
+                <p>
+                    Find different types of information connected
+                    to your search.
+                </p>
+
+
+
+            </div>
+
+            <div class="step">
+                <span>03</span>
+                <h3>Explore</h3>
+                <p>
+                    Follow the story directly to its original
+                    source.
+                </p>
+            </div>
+        </div>
+      </section>
+
+
+      <!-- ABOUT -->
+
+      <section id="about" class="about">
+
+        <div class="about-content">
+
+            <p class="eyebrow">WHY NEWSHUB</p>
+
+            <h2>
+                The internet has information.
+                <span>We help you find it.</span>
+
+            </h2>
+
+            <p>
+                NEWSHUB is designed as a discovery platform for the
+                modern internet. Instead of trying to become another
+                news publisher, it brings useful information together
+                and helps you reach the original source behind the story.
+                Search for something you care about and discover relevant
+                articles, interviews, videos and official information
+                from different places — without endlessly searching
+                across the internet yourself.
+            </p>
+        </div>
+      </section>
+
+
+      <!-- FOOTER -->
+      <footer>
+
+        <div>
+            <h2>NEWSHUB</h2>
+            <p>One Search. Every Prospective.</p>
+        </div>
+
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#trending">Trending</a>
+            <a href="#about">About</a>
+        </div>
+
+        <p>© 2026 NEWSHUB</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+  
+
+</body>
+</html>
